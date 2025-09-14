@@ -1,59 +1,160 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>sai saketh</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="stripes.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Sacramento&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div  class="div1">
-      <img class="top-cloud" src="img/cloud.png" alt="cloud">
-      <h1>I'm sai saketh.</h1>
-      <h2>A student.</h2>
-      <img  class="bottom-cloud" src="img/cloud.png" alt="cloud">
-      <img src="img/mountain2.png" alt="mountain" width="1000px">
-    </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img src="img/sai4.png" alt="sai-png" height="200px",width="200px">
-        <h2>Hello.</h2>
-        <p class="intro">Welcome to my personal website guys.I am  just a student who studying Computer Science Engineering</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="rack-img" src="img/developer.png" alt="prog"  >
-          <h3>web development & python</h3>
-          <p>I having a basic knowledge of python,C and i will create basic websites by using HTML and CSS  </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galla Vishnu Sai Saketh | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles that complement Tailwind */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FEFBF6; /* A soft cream background */
+            color: #3D405B; /* Deep indigo for text */
+        }
+        .font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+        .brand-primary {
+            color: #E07A5F; /* Terracotta accent */
+        }
+        .bg-brand-primary {
+            background-color: #E07A5F;
+        }
+        .bg-brand-secondary {
+             background-color: #3D405B;
+        }
+        .brand-secondary {
+            color: #3D405B;
+        }
+        .brand-tertiary {
+            color: #81B29A; /* Muted green */
+        }
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(61, 64, 91, 0.15);
+        }
+        @keyframes slow-float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-slow-float {
+            animation: slow-float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="bg-gray-100 pt-24 pb-12 text-center relative overflow-hidden">
+        <img src="img/cloud.png" alt="Cloud" class="absolute top-10 right-1/4 w-32 md:w-48 opacity-30 animate-slow-float" style="animation-delay: -2s;">
+        <h1 class="font-pacifico text-6xl md:text-8xl brand-primary">I'm Saketh.</h1>
+        <h2 class="text-xl md:text-3xl font-semibold brand-secondary mt-2">a Software Engineer.</h2>
+        <img src="img/cloud.png" alt="Cloud" class="absolute bottom-48 left-1/4 w-24 md:w-32 opacity-30 animate-slow-float">
+        <div class="w-full absolute bottom-0 left-0 right-0">
+             <img src="img/nano.png" alt="Futuristic Mountain Landscape with Circuitry" class="w-full h-auto">
         </div>
-        <div class="hobbies">
-          <img class="hobbies-img" src="img/game2.png" alt="game">
-          <h3>Hobbies</h3>
-        <p> I used to play  video games like  PUBG,callofdutymobile,  interested at cricket and photography</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 md:px-0 py-16 max-w-4xl">
+
+        <!-- About Me -->
+        <section id="about" class="text-center my-16 flex flex-col items-center">
+            <img class="w-48 h-48 rounded-full mb-6 shadow-2xl border-4 border-white object-cover" src="img/am.png" alt="Galla Vishnu Sai Saketh">
+            <h2 class="text-4xl font-bold brand-primary mb-4 font-pacifico">Hello.</h2>
+            <p class="text-lg leading-relaxed max-w-2xl text-gray-700">
+                Software Engineer with 2+ years of experience architecting, building, and deploying enterprise APIs and integration solutions. Proficient in Java, Spring Boot, and MuleSoft.
+            </p>
+        </section>
+
+        <hr class="border-t-2 border-dashed border-gray-300 w-16 mx-auto my-20">
+
+        <!-- Skills Section -->
+        <section id="skills" class="my-16">
+            <h2 class="text-4xl font-bold text-center brand-primary mb-12 font-pacifico">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-secondary mb-3">Programming & Databases</h3>
+                    <p class="text-base leading-relaxed text-gray-600"><strong>Languages:</strong> Java, Python, SQL, HTML, CSS</p>
+                    <p class="text-base leading-relaxed text-gray-600"><strong>Databases:</strong> MySQL, Oracle SQL, Postgresql</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold brand-secondary mb-3">Frameworks & Tools</h3>
+                    <p class="text-base leading-relaxed text-gray-600"><strong>Frameworks:</strong> Spring Boot, Spring MVC, Hibernate, MuleSoft, RESTful Services</p>
+                    <p class="text-base leading-relaxed text-gray-600"><strong>Tools:</strong> Anypoint Platform, Postman, Git, Docker, Maven</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t-2 border-dashed border-gray-300 w-16 mx-auto my-20">
+
+        <!-- Projects Section -->
+        <section id="projects" class="my-16">
+            <h2 class="text-4xl font-bold text-center brand-primary mb-12 font-pacifico">Projects</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-left project-card">
+                    <h3 class="text-2xl font-bold brand-secondary mb-2">TaskMaster: Enterprise Task Tracking System</h3>
+                    <p class="text-sm text-gray-500 mb-3">Java | Spring Boot | Hibernate | JWT | MySQL | Spring Security</p>
+                    <p class="text-base leading-relaxed text-gray-700">Built an end-to-end task management platform with secure JWT authentication and role-based access control. Features multi-user collaboration, real-time comments, and robust CRUD operations, boosting user productivity by 30%.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-left project-card">
+                    <h3 class="text-2xl font-bold brand-secondary mb-2">Speech Emotion Recognition</h3>
+                    <p class="text-sm text-gray-500 mb-3">Python | Scikit-learn | Flask</p>
+                    <p class="text-base leading-relaxed text-gray-700">Engineered a web app applying ML models to classify user emotions from audio input, achieving 83% accuracy. Designed an interface for human-computer interaction to interpret speech emotion context.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-left project-card">
+                    <h3 class="text-2xl font-bold brand-secondary mb-2">Virtual Mouse Using AI</h3>
+                    <p class="text-sm text-gray-500 mb-3">Python | OpenCV | NumPy | Machine Learning</p>
+                    <p class="text-base leading-relaxed text-gray-700">Developed a real-time virtual mouse controlled by hand gestures using a camera, eliminating the need for physical hardware and supporting actions like click and drag.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t-2 border-dashed border-gray-300 w-16 mx-auto my-20">
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center my-16">
+            <h2 class="text-4xl font-bold brand-primary mb-4 font-pacifico">Get In Touch</h2>
+            <h3 class="text-xl brand-secondary font-semibold mb-6">I'm currently open to new opportunities.</h3>
+            <p class="text-lg leading-relaxed max-w-lg mx-auto mb-8 text-gray-700">Have a project in mind or just want to discuss technology and software development? Let's connect!</p>
+            <a href="mailto:vishnusaisakethg@gmail.com" class="btn inline-block bg-brand-primary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90">
+                CONTACT ME
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-secondary text-white text-center py-10">
+        <div class="flex justify-center space-x-6 mb-4">
+             <a href="https://linkedin.com/in/vishnusaisaketh" target="_blank" class="hover:opacity-75 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+             </a>
+             <a href="https://github.com/saisaketh2282" target="_blank" class="hover:opacity-75 transition-opacity">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+             <a href="https://twitter.com/saisaketh2282" target="_blank" class="hover:opacity-75 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+             </a>
         </div>
-        <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>by clicking  below icons😉.</h3>
+        <p class="text-gray-300 text-sm mt-6">&copy; 2025 Galla Vishnu Sai Saketh</p>
+    </footer>
 
-
-
-      </div>
-
-      <div class="bottom-container">
-        <a class="footer-link" href="mailto:sai_saketh2202@gmail.com"><img src="img/email.ico" alt="email" height"50px" width="50px"></a>
-        <a class="footer-link" href="https://www.facebook.com/galla.saketh/"><img src="img/facebook.ico" alt="facebook" height="50px" width="50px"></a>
-        <a class="footer-link" href="https://twitter.com/saisaketh2282"><img src="img/twitter.ico" alt="twitter" height="50px" width="50px"></a>
-        <a class="footer-link" href="https://www.instagram.com/sai_saketh2282/"><img src="img/instagram.ico" alt="instagram" height="50px" width="50px"></a>
-        <p>© 2018 Galla vishnu sai saketh</p>
-      </div>
-
-  </body>
+</body>
 </html>
+
